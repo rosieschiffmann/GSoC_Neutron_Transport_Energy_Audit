@@ -1,0 +1,45 @@
+title: Neutron Transport Energy Audit
+description: This project uses CodeCarbon to measure the energy consumption and emissions
+  produced by a Python Monte Carlo neutron transport simulation, on a Lenovo ThinkPad
+  laptop with an AMD Ryzen 7 Pro CPU. In this run, each different slab thickness is
+  simulated consecutively, without parallel computation. This means the overall power
+  draw is lower, but the duration of computation is overall much higher than when
+  parallel computation is used.
+keywords:
+- MonteCarlo
+- CodeCarbon
+repository: https://github.com/rosieschiffmann/GSoC_Neutron_Transport_Energy_Audit.git
+Computing:
+  Embodied:
+    Carbon footprint:
+      Value (in gCO2e): '0.951709307272166'
+      Source and method: Lenovo Product Carbon Footprint Report
+    Depletion of Abiotic Resources (Minerals, Metals): {}
+    Particule Matter Emissions: {}
+    Acidification potential: {}
+    Ionising Radiation Related to Human Health: {}
+    Photochemical Ozone Formation: {}
+    Abiotic Depletion Potential (Fossil Fuels): {}
+    Freshwater Eco-Toxicity Potential: {}
+  Operational:
+    Impact values:
+      Energy consumption (in kWh): '0.00400569600138123'
+      Water consumption (in liters): '0'
+    Methods and scope:
+      Software boundaries: {}
+      Tool stages: {}
+      Hardware boundaries:
+        Details on hardware used: 'CPU: AMD Ryzen 7 PRO 5875U with Radeon Graphics
+          (16 Threads / 8 Cores)
+
+          Available RAM : 14.795 GB'
+      Infrastructure:
+        Power Usage Effectiveness (PUE):
+          Value: '1'
+          Estimation method used: Local device (no external cooling / lighting)
+        Water usage effectiveness:
+          Value (in L/kWh): '0'
+          Estimation method used: Local device (no water usage)
+      Electricity carbon intensity:
+        Value (in gCO2e/kWh): '237.59'
+        Source: CodeCarbon Global Emissions Database
