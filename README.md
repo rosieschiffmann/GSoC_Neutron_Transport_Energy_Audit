@@ -9,3 +9,28 @@ To produce the CSV files inside Data folder, the following specifications were u
 - CPU: AMD Ryzen 7 PRO 5875U with Radeon Graphics (16 Threads / 8 Cores)
 - Available RAM : 14.795 GB
 - Location: Manchester
+- 
+## Installation & Execution
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/YourUsername/GSoC_Neutron_Transport_Energy_Audit.git
+cd GSoC_Neutron_Transport_Energy_Audit
+````
+### 2. Set up Virtual Environment
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+````
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+````
+### 4. Run the Neutron Transport Simulation
+Ensure the notebook kernel is set to your `.venv.`
+Open Neutron_Transport_Simulation.ipynb in VSCode/Jupyter and run all cells.
+### 5. Process Raw CodeCarbon Logs
+To obtain the total emissions / energy consumption metrics
+```bash
+python process_codecarbon_logs.py
+````
