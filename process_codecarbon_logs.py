@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Load your CodeCarbon log file
-log_file = r"C:\Users\Rosie\Documents\GSoC26\Evaluation_task\GSoC_Neutron_Transport_Energy_Audit\Data\CodeCarbonLog_1Thread.csv"
+log_file = r"Energy_Audit_CodeCarbon_Log.csv"
 df = pd.read_csv(log_file)
 
 # Calculate Time & Emissions
